@@ -1,4 +1,4 @@
-INDEX VERSION 1.131+G:\±ÏÒµ\scetc-show-videos-admin\.metadata\.plugins\org.eclipse.jdt.core
+INDEX VERSION 1.131+G:\ï¿½ï¿½Òµ\scetc-bin-lin-admin\.metadata\.plugins\org.eclipse.jdt.core
 1414874649.index
 1976155386.index
 776392424.index
