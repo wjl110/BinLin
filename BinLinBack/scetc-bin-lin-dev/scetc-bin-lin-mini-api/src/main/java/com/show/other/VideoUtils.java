@@ -171,7 +171,8 @@ public class VideoUtils {
      */
     public static void getVideoJpgByTime(int time, String videoPath, String imgPath) throws IOException {
         new File(imgPath).delete();
-        new ProcessBuilder().command(ffmepgPath, "-ss", format(time), "-i", videoPath, imgPath, "-f", "image2", "-frames:v", "1", imgPath).start();
+        new ProcessBuilder().command(ffmepgPath, "-ss", format(time), "-i",
+                videoPath, "-f", "image2", "-frames:v", "1", imgPath).start();
     }
 
     /**

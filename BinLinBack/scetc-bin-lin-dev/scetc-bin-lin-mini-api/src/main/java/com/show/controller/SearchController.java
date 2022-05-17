@@ -11,6 +11,8 @@ import io.swagger.annotations.ApiOperation;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
+import org.elasticsearch.index.query.BoolQueryBuilder;
+import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,10 +47,12 @@ public class SearchController {
         return XyfJsonResult.ok(restHighLevelClient.search(new SearchRequest()
                         .indices(AppConst.ElasticSearch.bin_lin_video.name())
                         .source(new SearchSourceBuilder().query(
-                                QueryBuilders.fuzzyQuery("text", searchCondition.getSearchText()))
+                                QueryBuilders.boolQuery()
+                                        .should(QueryBuilders.fuzzyQuery("videoDesc", searchCondition.getSearchText()))
+                                        .should(QueryBuilders.fuzzyQuery("text", searchCondition.getSearchText())))
                                 .from((searchCondition.getCurrentPage() - 1) / searchCondition.getPageSize())
                                 .size(searchCondition.getPageSize()))
-                , RequestOptions.DEFAULT));
+                , RequestOptions.DEFAULT).getHits());
     }
 
     @GetMapping("/history")

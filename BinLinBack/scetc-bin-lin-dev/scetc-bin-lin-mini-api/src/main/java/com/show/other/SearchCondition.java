@@ -42,7 +42,7 @@ public class SearchCondition implements Serializable {
     @ApiModelProperty(value = "搜索文本", name = "searchText", dataType = "String", example = "测试", required = true)
     private String searchText;
 
-    @ApiModelProperty(value = "其他", name = "other", dataType = "Map", example = "{'key1': 'value1'}", required = false)
+    @ApiModelProperty(value = "其他", name = "other", dataType = "Map", required = false)
     private Map<String, String> other;
 
     public SearchCondition setCurrentPage(Integer currentPage) {

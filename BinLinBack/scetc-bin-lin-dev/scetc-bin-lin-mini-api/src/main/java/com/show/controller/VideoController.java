@@ -91,7 +91,7 @@ public class VideoController extends BasicController {
                                 JSONObject jsonObject = (JSONObject) o;
                                 Integer endTime = jsonObject.getInteger("EndTime");
                                 Integer beginTime = jsonObject.getInteger("BeginTime");
-                                String imgPath = videoPath.substring(0, videoPath.lastIndexOf('.')) + beginTime + ".img";
+                                String imgPath = videoPath.substring(0, videoPath.lastIndexOf('.')) + beginTime + ".jpg";
                                 String imgAbsolutePath = FILe_SPACE + imgPath;
                                 String aLiYunImgPath = "binlin/user" + imgPath;
                                 String text = jsonObject.getString("Text");
@@ -128,6 +128,23 @@ public class VideoController extends BasicController {
                                 }
                             }
                         });
+                    } else {
+                        restHighLevelClient.index(new IndexRequest().index(bin_lin_video.name())
+                                .id(videos.getId()).source(
+                                        new HashMap<String, Object>(10) {
+                                            {
+                                                put("beginTime", "");
+                                                put("endTime", "");
+                                                put("text", "");
+                                                put("videoDesc", videos.getVideoDesc());
+                                                put("videoId", videos.getId());
+                                                put("videoPage", videos.getVideoPath());
+                                                put("videoCategory", videos.getVideoCategory());
+                                                put("audioId", videos.getAudioId());
+                                                put("userId", videos.getUserId());
+                                                put("gitURL", "");
+                                            }
+                                        }), RequestOptions.DEFAULT);
                     }
                     break;
                 }
