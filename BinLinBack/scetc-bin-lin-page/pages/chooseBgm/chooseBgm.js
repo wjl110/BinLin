@@ -276,7 +276,7 @@ Page({
       name: 'file',
       header:
         {
-          'content-type': 'application/json'//默认值
+          'content-type': 'multipart/form-data'//默认值
         },
       success: function (res) {
         var data = JSON.parse(res.data);

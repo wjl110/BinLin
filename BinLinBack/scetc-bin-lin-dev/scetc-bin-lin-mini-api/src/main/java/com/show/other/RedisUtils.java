@@ -322,7 +322,7 @@ public class RedisUtils {
     public Long zIfAbsent(String key, Set<ZSetOperations.TypedTuple<String>> tuples) {
         return key == null ? 0 : stringRedisTemplate.opsForZSet().add(key, tuples);
     }
-    public Boolean zIfAbsent(String key, String value, double score) {
+    public Boolean zAdd(String key, String value, double score) {
         return key == null ? false : stringRedisTemplate.opsForZSet().add(key, value, score);
     }
     /**

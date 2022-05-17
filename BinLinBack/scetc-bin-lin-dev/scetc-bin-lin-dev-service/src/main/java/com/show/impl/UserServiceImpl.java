@@ -128,8 +128,6 @@ public class UserServiceImpl implements UserService {
 		userFansMapper.deleteByExample(example);
 		userMapper.reduceFansCount(userId);
 		userMapper.followWithReduce(fanId);//粉丝的关注量-1
-
-
 	}
 	@Override
 	public boolean queryIsFollowed(String userId, String fanId) {

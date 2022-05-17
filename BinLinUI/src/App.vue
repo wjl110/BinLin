@@ -3,8 +3,8 @@ import {reactive} from "vue";
 
 </script>
 <template>
-	<router-view/>
-	<van-tabbar routev>
+	<router-view class="mo-main"/>
+	<van-tabbar route>
 		<van-tabbar-item replace to="/index" icon="home-o">首页</van-tabbar-item>
 		<van-tabbar-item replace to="/search" icon="search">搜索</van-tabbar-item>
 		<van-tabbar-item replace to="/publish" icon="add-o">发布</van-tabbar-item>
@@ -14,8 +14,12 @@ import {reactive} from "vue";
 </template>
 
 <style>
-body>canvas {
-	display: none!important;
+.mo-main {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: var(--van-tabbar-height);
 }
 .mo-global-center {
 	position: absolute;
@@ -27,8 +31,7 @@ body>canvas {
 .mo-full-screen {
 	position: absolute;
 	top: 0px;
-	left: 0px;
-	right: 0px;
+	width: 100%;
 	bottom: 0px;
 }
 

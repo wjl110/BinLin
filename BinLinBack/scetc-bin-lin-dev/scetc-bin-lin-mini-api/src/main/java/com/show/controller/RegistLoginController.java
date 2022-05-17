@@ -5,6 +5,7 @@ import java.util.UUID;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +18,8 @@ import com.show.vo.UsersVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
+
+import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @Api(tags = { "用户接口" })
@@ -32,17 +35,17 @@ public class RegistLoginController extends BasicController {
 	 */
 	@ApiOperation(value = "登陆", notes = "用户注册的接口")
 	@PostMapping("/login")
-	public XyfJsonResult login(@RequestBody Users user) throws Exception {
+	public XyfJsonResult login(@RequestBody Users user, HttpServletRequest request) throws Exception {
 		Thread.sleep(500);
 		if (StringUtils.isBlank(user.getUsername()) || StringUtils.isBlank(user.getPassword())) {
 			return XyfJsonResult.errorMsg("小主,账号密码不能为空哦");
 		}
 		if (userService.queryUsernameIsExist(user.getUsername())) {
-
 			Users userSource = userService.getUser(user.getUsername());
 			if (userSource.getPassword().equalsIgnoreCase(MD5Utils.getMD5Str(user.getPassword()))) {
 				user.setPassword("");
 				UsersVo userVo = setUserRedisSessionToken(userSource);
+				request.getSession().setAttribute("user", userSource);
 				return XyfJsonResult.ok(userVo);
 			} else {
 				return XyfJsonResult.errorMsg("小主,你的账号密码错误");
