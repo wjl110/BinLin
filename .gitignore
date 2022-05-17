@@ -123,6 +123,3 @@ yarn-error.log*
 selenium-debug.log
 package-lock.json
 yarn.lock
-
-*Utils.java
-test
