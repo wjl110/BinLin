@@ -1,0 +1,21 @@
+/* pages/videoBack/videoBack.wxss */
+page{
+    background-color: #efefef;
+}
+.all{
+    display: flex;
+    flex-wrap: wrap;
+}
+.patch{
+    width: 352rpx;
+    height: 500rpx;
+    border: 1rpx solid #000;
+    border-radius: 20rpx;
+    margin: 10rpx 10rpx;
+    box-shadow:  #999;
+}
+.patch image{
+    width: 350rpx;
+    height: 400rpx;
+    margin: auto;
+}

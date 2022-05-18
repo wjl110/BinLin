@@ -1,0 +1,9 @@
+
+<view class="all">
+    <view class="sootVideo" bindtap="shootVideo">
+        拍摄视频
+    </view>
+    <view class="uploadVideo" bindtap="uploadVideo">
+        上传视频
+    </view>
+</view>

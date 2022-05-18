@@ -1,0 +1,96 @@
+.search{
+    display: flex;
+    width: 680rpx;
+    height: 80rpx;
+    margin:10rpx auto;
+    border-radius: 40rpx;
+    background-color: #efefef;
+}
+.search button{
+    margin: auto;
+    height: 70rpx;
+    opacity:0.3;
+    background-color: #efefef;
+    border: 0rpx;
+}
+.search input{
+    height: 80rpx;
+    width: 430rpx;
+}
+.platform{
+    width: 160rpx;
+    height: 160rpx;
+    background-color: #fff;
+    border-radius: 20rpx;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.platform image{
+    width: 80rpx;
+    height: 80rpx;
+}
+.platform view text{
+    font-size: small;
+}
+.platfrom-out{
+    margin: 40rpx auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.platfrom-out navigator{
+    margin: 10rpx;
+}
+.Searchs{
+    margin: 20rpx auto;
+    width: 600rpx;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hot {
+    padding: 4px 6px;
+    margin: 4px 4px;
+    background-color: #efefef;
+    border: 1rpx solid #efefef;
+    border-radius: 100rpx;
+}
+scroll-view{ 
+    margin: 20rpx 30rpx;
+    white-space: nowrap;
+}
+.outside{
+    width: 150rpx;
+    height: 150rpx;
+    display: inline-block;
+}
+.scroll{
+    margin-top: 20rpx;
+    height: 100rpx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.scroll image{
+    max-width: 100rpx;
+    max-height: 100rpx;
+}
+.history{
+    margin:10rpx auto;
+    width: 600rpx;
+    display: flex;
+}
+.history image{
+    width: 50rpx;
+    height: 50rpx;
+}
+.history text:nth-child(2){
+    margin-left: 50rpx;
+    width: 500rpx;
+}
+.history text:nth-child(3){
+    text-align: center;
+    width: 80rpx;
+}

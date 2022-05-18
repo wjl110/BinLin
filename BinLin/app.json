@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/category/category",
+    "pages/userLogin/login",
+    "pages/userRegist/regist",
+    "pages/mine/mine",
+    "pages/chooseBgm/chooseBgm",
+    "pages/index/index",
+    "pages/videoInfo/videoInfo",
+    "pages/searchVideos/searchVideos",
+    "pages/report/report",
+    "pages/bootstrap/bootstrap",
+    "pages/upload/upload",
+    "pages/info/info",
+    "pages/seach/seach",
+    "pages/visiting_card/visiting_card",
+    "pages/activity/activity",
+    "pages/music/music",
+    "pages/demo/demo",
+    "pages/videoBack/videoBack"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "BinLin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "pages/resource/images/home.png",
+        "selectedIconPath": "pages/resource/images/home.png"
+      },
+      {
+        "pagePath": "pages/seach/seach",
+        "text": "搜索",
+        "iconPath": "pages/resource/images/search.png",
+        "selectedIconPath": "pages/resource/images/search.png"
+      },
+      {
+        "pagePath": "pages/upload/upload",
+        "text": "发布",
+        "iconPath": "pages/resource/images/add_bar.png",
+        "selectedIconPath": "pages/resource/images/add_bar.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "元宇宙",
+        "iconPath": "pages/resource/images/yuzhou.png",
+        "selectedIconPath": "pages/resource/images/yuzhou.png"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "信息",
+        "iconPath": "pages/resource/images/me.png",
+        "selectedIconPath": "pages/resource/images/me.png"
+      }
+    ]
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

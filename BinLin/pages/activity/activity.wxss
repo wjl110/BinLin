@@ -1,0 +1,15 @@
+/* pages/activity/activity.wxss */
+.dd{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #040e1d;
+    display: flex;
+    align-items: center;
+}
+.d2{
+    width: 750rpx;
+    height: 750rpx;
+}

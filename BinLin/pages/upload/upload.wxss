@@ -1,0 +1,23 @@
+page {
+    background-color: #f1efef;
+}
+.all{
+    position: absolute;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all view{
+    margin-left: 137.5rpx;
+    width: 50%;
+    color: #61649f;
+    text-align: center;
+    writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/
+    font-size: 100rpx;
+    font-weight: 900;
+}

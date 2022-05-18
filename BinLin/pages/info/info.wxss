@@ -1,0 +1,82 @@
+.head_portrait{
+    height: 150rpx;
+    width: 150rpx;
+    border-radius: 50%;
+    margin: 20rpx 50rpx;
+}
+.personal_information{
+    height: 70rpx;
+    width: 680rpx;
+    margin: 10rpx auto;
+    padding: 10rpx 25rpx;
+    border-radius: 35rpx;
+    display: table;
+    background-color: #efefef;
+}
+.personal_information text:first-child{
+    display: table-cell;
+    color: #333333;
+}
+.personal_information text:nth-child(2){
+    display: table-cell;
+    float: right;
+    color: #999999;
+}
+.friends{
+    background-color: #efefef;
+    margin: 10rpx auto;
+    display: flex;
+    width: 680rpx;
+    height: 100rpx;
+    border: 1rpx solid #efefef;
+    border-radius: 50rpx;
+}
+.friends image{
+    border: 1rpx solid #efefef;
+    border-radius: 40rpx;
+    width: 80rpx;
+    height: 80rpx;
+}
+.friends view{
+    display: table-cell;
+    margin-left: 20rpx;
+    width: 500rpx;
+}
+.friends view text{
+    font-size: small;
+}
+.friends button{
+    border: 1rpx solid #efefef;
+    border-radius: 50rpx;
+    width: 80rpx;
+    background-color: #efefef;
+}
+.islamic{
+    background-color: #efefef;
+    margin: 10rpx auto;
+    display: flex;
+    width: 680rpx;
+    height: 100rpx;
+    border: 1rpx solid #efefef;
+    border-radius: 50rpx;
+}
+.islamic image{
+    border: 1rpx solid #efefef;
+    border-radius: 40rpx;
+    width: 80rpx;
+    height: 80rpx;
+}
+.islamic view{
+    margin-left: 20rpx;
+    display: table-cell;
+    width: 500rpx;
+}
+.islamic view text{
+    font-size: small;
+}
+.islamic button{
+    width: 80rpx;
+    border: 1rpx solid #efefef;
+    border-radius: 50rpx;
+    background-color: #efefef;
+}

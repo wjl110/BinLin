@@ -1,0 +1,5 @@
+<!--pages/activity/activity.wxml-->
+<!-- <image style="width: 100%;height: 1600rpx;" src="https://tse1-mm.cn.bing.net/th/id/R-C.8a100dd391f668ff523c3577ecda0357?rik=6GPGxAJ1Cd7Lfg&riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20181020%2f7ea1008545974ab4a197aec8d6d6fa1b.gif&ehk=sy0tboyKmWNSFvGpILijPrP3kh4QSwUN5povpiqj1WM%3d&risl=&pid=ImgRaw&r=0"></image> -->
+<view class="dd">
+    <video class="d2" autoplay loop="true" controls="{{false}}" src="https://mo-test.oss-cn-hangzhou.aliyuncs.com/binlin/video/globe.mp4"></video>
+</view>

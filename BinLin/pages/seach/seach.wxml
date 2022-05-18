@@ -1,0 +1,39 @@
+<form bindsubmit="searchTo">
+    <view class="search">
+        <navigator>
+            <image style="height: 60rpx;width: 60rpx;margin:13rpx 20rpx;" src="../../images/home_1.png"></image>
+        </navigator>
+        <input name="input1" type="text" placeholder="请输入您要搜索的内容"/>
+        <button form-type="submit">搜索</button>
+    </view>
+</form>
+<view class="platfrom-out">
+	<navigator class="platform" wx:for="{{platform}}" wx:key="{{i}}">
+		<image src="{{item.imgsrc}}"></image>
+		<view>
+            <text>{{item.platname}}</text>
+        </view>
+	</navigator>
+	<navigator class="platform">
+		<image src="../../images/add.png"></image>
+		<view>
+            <text>添加</text>
+        </view>
+	</navigator>
+</view>
+<view>
+	<view style="margin-left: 30rpx;">热搜榜：</view>
+<view class="Searchs">
+    <view class="hot" wx:for="{{hots}}" wx:key="{{i}}">{{item}}</view>
+</view>
+</view>
+<view>
+	<text style="margin-left: 30rpx;">搜索记录：</text>
+	<view style="margin-top: 20rpx;">
+        <view class="history" wx:for="{{seachHistory}}" wx:key="{{i}}">
+		<image src="../../images/history.png"></image>
+		<text>{{item}}</text>
+		<text bindtap="del" data-operation="{{item}}">X</text>
+	</view>
+    </view>
+</view>

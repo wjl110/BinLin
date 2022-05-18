@@ -1,0 +1,53 @@
+<!--pages/home/home.wxml-->
+<view class="page-section-spacing" style="margin:60rpx auto;">
+    <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%;margin:auto;">
+        <view id="demo1" style="width: 90rpx;" class="scroll-view-item_H demo-text-1" wx:for="{{platforms}}" wx:key="i">
+                <image class="scroll-view-item_H" src="{{item.imgsrc}}" style="width: 80rpx;height: 80rpx;"></image>
+        </view>
+    </scroll-view>
+</view>
+<swiper vertical="true" bindchange="onChange">
+    <swiper-item wx:for="{{video}}" wx:key="{{i}}">
+        <video id="{{item.id}}" src="{{item.src}}" autoplay="{{item.auto}}" style="width: 100%; height: 1700rpx;" play-btn-position="center">
+            <cover-view class="top">
+                <cover-view class="{{light1}}">
+                    推荐
+                </cover-view>
+                <cover-view class="{{light2}}">
+                    关注
+                </cover-view>
+                <cover-view class="{{light3}}">
+                    直播
+                </cover-view>
+                <cover-view class="" bindtap="toSeach">
+                    <cover-image style="width: 60rpx;height: 60rpx;" src="../../images/home_1.png"></cover-image>
+                </cover-view>
+            </cover-view>
+            <cover-view class="out">
+                <cover-view class="inside" bindtap="like">
+                    <cover-image  src="{{likeSrc}}"></cover-image>
+                    <cover-view>{{item.like}}</cover-view>
+                </cover-view>
+                <cover-view class="inside">
+                    <cover-image src="../../images/xiaoxi.png"></cover-image>
+                    <cover-view>{{item.comment}}</cover-view>
+                </cover-view>
+                <cover-view class="inside">
+                    <cover-image src="../../images/zuanfa.png"></cover-image>
+                    <cover-view>{{item.share}}</cover-view>
+                </cover-view>
+                <cover-view class="inside" open-type="navigateBack">
+                    <navigator url="/pages/music/music">
+                        <cover-image src="../../images/music.png"></cover-image>
+                    </navigator>
+                </cover-view>
+                
+            </cover-view>
+            <cover-view class="tip">
+                <cover-image src="{{item.headSrc}}"></cover-image>
+                <cover-view>{{item.name}}</cover-view>
+                <cover-view>{{item.tip}}</cover-view>
+            </cover-view>
+        </video>
+    </swiper-item>
+</swiper>

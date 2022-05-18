@@ -1,0 +1,46 @@
+<view>
+	<view style="display: flex;">
+        <image class="head_portrait" src="{{headimg}}" bindtap="chooseHead"></image>
+        <button style="width: 150rpx;height: 70rpx;margin:auto 50rpx auto auto;"  size="mini" type="{{btnType}}" bindtap="login">{{state}}</button>
+    </view>
+	<navigator>
+		<view class="personal_information">
+			<text>昵称 :</text>
+			<text>{{name}}</text>
+		</view>
+	</navigator>
+	<navigator>
+		<view class="personal_information">
+			<text>性别 :</text>
+			<text>{{gender}}</text>
+		</view>
+	</navigator>
+	<navigator>
+		<view class="personal_information">
+			<text>生日 :</text>
+			<text>{{birthday}}</text>
+		</view>
+	</navigator>
+</view>
+<text style="margin: 20rpx 30rpx; font-size: large;">好友 :</text>
+<view>
+	<view class="friends" wx:for="{{beautiful}}" wx:key="{{i}}">
+		<image src="{{item.imgsrc}}"></image>
+		<view>
+			<view><text>{{item.name}}</text></view>
+			<text>{{item.time}}</text>
+		</view>
+		<button>```</button>
+	</view>
+</view>
+<text style="margin: 20rpx;">我的名片</text>
+<view>
+	<view class="islamic" wx:for="{{islamic}}" wx:key="{{i}}">
+		<image src="{{item.imgsrc}}"></image>
+		<view>
+			<view><text>{{item.name}}</text></view>
+			<text>{{item.time}}</text>
+		</view>
+		<button>```</button>
+	</view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/visiting_card/visiting_card.wxml-->
+<view class="head">
+    <image src="{{headimg}}"></image>
+</view>
+<view class="out">
+    <view class="little" wx:for="{{cards}}" wx:key="{{i}}">
+        <image src="{{item.cardimg}}"></image>
+        <view>{{item.cardname}}</view>
+    </view>
+</view>

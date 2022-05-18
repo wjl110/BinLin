@@ -1,0 +1,6 @@
+<!--pages/videoBack/videoBack.wxml-->
+<view class="all">
+    <view class="patch" wx:for="{{backs}}">
+        <image src="{{item.imgSrc}}"></image>
+    </view>
+</view>

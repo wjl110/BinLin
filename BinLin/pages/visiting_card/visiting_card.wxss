@@ -1,0 +1,28 @@
+/* pages/visiting_card/visiting_card.wxss */
+.head{
+    margin: 30rpx auto 30rpx auto;
+}
+.head image{
+    margin-left: 60rpx;
+    width: 160rpx;
+    height: 160rpx;
+    border: 1rpx solid #000;
+    border-radius: 80rpx;
+}
+.out{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.little{
+    margin: 15rpx;
+    align-items: center;
+}
+.little image{
+    width: 80rpx;
+    height: 80rpx;
+    margin: 20rpx;
+}
+.little view{
+    font-size: small;
+}
