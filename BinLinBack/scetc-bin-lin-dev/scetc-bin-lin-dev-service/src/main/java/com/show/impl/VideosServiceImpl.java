@@ -2,7 +2,11 @@ package com.show.impl;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
+import cn.hutool.core.util.ObjectUtil;
+import cn.hutool.core.util.StrUtil;
 import org.n3r.idworker.Sid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.oauth2.resource.UserInfoRestTemplateCustomizer;
@@ -212,6 +216,11 @@ public class VideosServiceImpl implements VideoService {
 		userReport.setUserid(userId);
 		userReportMapper.insert(userReport);
 
+	}
+
+	@Override
+	public List<Videos> getVideos(List<Object> ids) {
+		return videosMapper.selectByIds(ids.stream().filter(o -> o instanceof String).map(o -> (String) o).collect(Collectors.toSet()));
 	}
 
 }

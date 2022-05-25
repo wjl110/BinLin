@@ -390,6 +390,15 @@ public class RedisUtils {
         }
     }
 
+    public List<Object> sGetRand(String key, int num) {
+        try {
+            return redisTemplate.opsForSet().randomMembers(key, num);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
     /**
      * 根据value从一个set中查询,是否存在
      *

@@ -5,7 +5,7 @@ const data = reactive({
 	videos: [
 		{
 			id: '1',
-			videoUrl: '/src/assets/e.mp4',
+			videoUrl: '/src/assets/c.mp4',
 			bgmUrl: '/src/assets/b.mp3',
 			star: 5525,
 			comment: 4525,
@@ -18,8 +18,8 @@ const data = reactive({
 			},
 		},
 		{
-			id: '1',
-			videoUrl: '/src/assets/e.mp4',
+			id: '2',
+			videoUrl: '/src/assets/c.mp4',
 			bgmUrl: '/src/assets/b.mp3',
 			star: 5525,
 			comment: 4525,
@@ -33,8 +33,8 @@ const data = reactive({
 		}
 		,
 		{
-			id: '1',
-			videoUrl: '/src/assets/a.mp4',
+			id: '3',
+			videoUrl: '/src/assets/c.mp4',
 			bgmUrl: '/src/assets/b.mp3',
 			star: 5525,
 			comment: 4525,
@@ -82,13 +82,13 @@ const data = reactive({
 					</div>
 				</div>
 				<div class="mo-full-screen">
-					<video class="video mo-global-center" preload="metadata" autoplay="autoplay" loop="loop"
+					<video class="video mo-global-center" preload="metadata" loop="loop"
 								 :src="video.videoUrl"></video>
 				</div>
 				<div class="mo-bottom">
 					<h6 class="mo-single-line-omit">@{{ video.user.nickname }}</h6>
 					<p class="mo-multi-line-omit">{{ video.description }}</p>
-					<audio autoplay="autoplay" loop="loop" preload="metadata" :src="video.bgmUrl" controls></audio>
+<!--					<audio autoplay="autoplay" loop="loop" preload="metadata" :src="video.bgmUrl" controls></audio>-->
 				</div>
 			</van-swipe-item>
 		</van-swipe>

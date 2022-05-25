@@ -4,25 +4,17 @@ package com.show.aspect;
 import com.show.other.RedisUtils;
 import com.show.other.SearchCondition;
 import com.show.pojo.Users;
-import com.show.vo.UsersVo;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.DefaultTypedTuple;
-import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
-import org.springframework.util.ObjectUtils;
-import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.util.StringUtil;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.Set;
 
 import static com.show.other.AppConst.Redis.SEARCH_HISTORY;
 import static com.show.other.AppConst.Redis.SEARCH_TEXT;

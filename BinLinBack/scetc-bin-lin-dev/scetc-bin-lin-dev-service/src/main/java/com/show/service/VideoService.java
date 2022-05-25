@@ -86,8 +86,10 @@ public interface VideoService {
     public void reportVideoByUser(String dealUserId,String dealVideoId,String userId,String title,String content);
 
 
-  
-    
-    
-    
+	/**
+	 * 获取视频列表
+	 * @param ids 视频id列表
+	 * @return
+	 */
+    List<Videos> getVideos(List<Object> ids);
 }

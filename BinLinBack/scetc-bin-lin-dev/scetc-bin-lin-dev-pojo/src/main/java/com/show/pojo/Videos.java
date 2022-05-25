@@ -3,7 +3,7 @@ package com.show.pojo;
 import java.util.Date;
 import javax.persistence.*;
 
-
+@TableName("user_open")
 public class Videos {
     @Id
     private String id;

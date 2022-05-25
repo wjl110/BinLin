@@ -79,7 +79,7 @@ public class MergeVideo {
 
 	}
 
-	public void convertor(String mp3InputPath, String videoPath, double seconds, String outPath, String filter) {
+	public void convertor(String mp3InputPath, String videoPath, String outPath, String filter) {
 		// ffmpeg.exe -i test.mp4 spring.avi
 		// ffmpeg.exe -i bgm.mp3 -i video.mp4 -t 6 -y xu.mp4
 		/*
@@ -110,7 +110,6 @@ public class MergeVideo {
 
 		}
 		command.add("-t");
-		command.add(String.valueOf(seconds));
 		command.add("-y");
 		command.add(outPath);// 输出
 
@@ -191,14 +190,5 @@ public class MergeVideo {
 
 	}
 
-	public static void main(String[] args) {
-
-		MergeVideo ffmpeg = new MergeVideo("G:\\ffmepg视频处理方案\\ffmpeg-20180704-3b10bb8-win64-static\\bin\\ffmpeg.exe");
-		ffmpeg.convertor("G:\\ffmepg视频处理方案\\ffmpeg-20180704-3b10bb8-win64-static\\bin\\bgm.mp3",
-				"G:\\ffmepg视频处理方案\\ffmpeg-20180704-3b10bb8-win64-static\\bin\\video.mp4", 7,
-				"G:\\ffmepg视频处理方案\\ffmpeg-20180704-3b10bb8-win64-static\\bin\\xuyuanfeng.mp4", "define");
-		System.out.println("转换成功");
-
-	}
 
 }

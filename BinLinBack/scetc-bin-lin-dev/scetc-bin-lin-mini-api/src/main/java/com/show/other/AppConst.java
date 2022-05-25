@@ -1,5 +1,6 @@
 package com.show.other;
 
+import java.util.concurrent.*;
 import java.util.regex.Pattern;
 
 /**
@@ -19,8 +20,9 @@ public class AppConst {
      * Redis 常量
      */
     public enum Redis {
-        LOGIN, ALL_CLASSIFY, ALL_PERMISSION, BOTTOM_CLASSIFY, SEARCH_TEXT, SEARCH_HISTORY
+        LOGIN, ALL_CLASSIFY, ALL_PERMISSION, BOTTOM_CLASSIFY, SEARCH_TEXT, SEARCH_HISTORY, VIDEO_ID_SET
     }
+
     /**
      * Session 常量
      */
@@ -34,7 +36,16 @@ public class AppConst {
     public enum Default {
         DEFAULT_HEAD_FILE
     }
+
     public static class Api {
         public static final String V = "/v";
     }
+
+    public static ExecutorService executorService = new ThreadPoolExecutor(
+            10,
+            20,
+            5,
+            TimeUnit.MINUTES,
+            new LinkedBlockingQueue<>()
+    );
 }

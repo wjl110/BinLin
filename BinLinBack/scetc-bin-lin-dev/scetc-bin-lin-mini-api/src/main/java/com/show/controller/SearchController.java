@@ -1,5 +1,6 @@
 package com.show.controller;
 
+import cn.hutool.core.util.StrUtil;
 import com.show.other.AppConst;
 import com.show.other.RedisUtils;
 import com.show.other.SearchCondition;
@@ -44,7 +45,11 @@ public class SearchController {
     @ApiOperation("搜索视频")
     @PostMapping("/video")
     public XyfJsonResult search(@RequestBody SearchCondition searchCondition, HttpServletRequest request) throws IOException {
-        return XyfJsonResult.ok(restHighLevelClient.search(new SearchRequest()
+        if (StrUtil.isBlank(searchCondition.getSearchText())) {
+            return XyfJsonResult.errorMsg("搜索文本不能为空");
+        }
+        return XyfJsonResult.ok(
+                restHighLevelClient.search(new SearchRequest()
                         .indices(AppConst.ElasticSearch.bin_lin_video.name())
                         .source(new SearchSourceBuilder().query(
                                 QueryBuilders.boolQuery()

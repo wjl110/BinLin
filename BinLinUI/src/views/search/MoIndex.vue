@@ -85,12 +85,13 @@ const onSearch = () => {
 				placeholder="请输入搜索关键词"
 				@search="onSearch"
 		>
+
 			<template #action>
 				<div @click="onClickButton">搜索</div>
 			</template>
 		</van-search>
 
-<!--		<div class="mo-videos">
+		<div class="mo-videos">
 			<div class="mo-video mo-border-radius" v-for="video in data.videos">
 				<img :src="video.imgUrl">
 				<div class="mo-bottom">
@@ -107,7 +108,7 @@ const onSearch = () => {
 					</span>
 				</div>
 			</div>
-		</div>-->
+		</div>
 	</div>
 </template>
 
