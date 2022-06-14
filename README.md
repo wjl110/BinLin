@@ -8,7 +8,7 @@
 《效率工具产品-短视频APP（元宇宙·无障碍版）》
 
 ## 成员介绍
-https://hackerlink.s3.amazonaws.com/static/files/WechatIMG286.png
+![imag](https://hackerlink.s3.amazonaws.com/static/files/WechatIMG286.png)
 
 团       队:  BinLin技术团队
 人       员:  项目发起负责人 wjl110
