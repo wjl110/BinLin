@@ -2,8 +2,7 @@
 [Chinese](README_chinese.md)、
 [English](README.md)
 ---
-
-![image](https://hackerlink.s3.amazonaws.com/static/files/WechatIMG286.png)
+![image](English.png)
 
 ---
 
