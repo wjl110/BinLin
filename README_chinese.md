@@ -22,7 +22,7 @@
 
 ### P    C     端: [石磊](https://github.com/916202420)
 
-### 小  程  序  端: [刘昊](https://github.com/916202420)
+### 小  程  序  端: [刘昊](https://github.com/lhlh123456)
 
 *组员均来自中国内地高校在校生*
 
