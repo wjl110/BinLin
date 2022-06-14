@@ -10,9 +10,9 @@
 ## [视频介绍](https://www.bilibili.com/video/BV12A4y1R7mU/)、[PPT英文版](https://docs.qq.com/document/DTmJRdlBpcmxJQXVD)、[PPT中文版](https://docs.qq.com/document/DTkZ6enV3b3pIcFdk)、[技术说明](README_file.md)
 
 # demo代码库
-[小程序](https://github.com/wjl110/BinLin/tree/master)、[小程序UI](https://github.com/wjl110/BinLin/tree/master/BinLinUI)、[小程序后端](https://github.com/wjl110/BinLin/tree/master/BinLinBack)
+[PC](https://github.com/wjl110/BinLin/tree/master)、[PC UI](https://github.com/wjl110/BinLin/tree/master/BinLinUI)、[PC 后端](https://github.com/wjl110/BinLin/tree/master/BinLinBack)
 
-[PC端](https://github.com/wjl110/BinLin/tree/ui/BinLin)
+[小程序](https://github.com/wjl110/BinLin/tree/ui/BinLin)
 
 ---
 

@@ -11,9 +11,9 @@
 
 ---
 # Demo Code library
-## [Applets](https://github.com/wjl110/BinLin/tree/master)、[Applets UI](https://github.com/wjl110/BinLin/tree/master/BinLinUI)、[Applets Back end](https://github.com/wjl110/BinLin/tree/master/BinLinBack)
+## [PC](https://github.com/wjl110/BinLin/tree/master)、[PC UI](https://github.com/wjl110/BinLin/tree/master/BinLinUI)、[PC Back end](https://github.com/wjl110/BinLin/tree/master/BinLinBack)
 
-## [PC](https://github.com/wjl110/BinLin/tree/ui/BinLin)
+## [Applets](https://github.com/wjl110/BinLin/tree/ui/BinLin)
 
 ---
 
