@@ -20,6 +20,11 @@
 
 
 ---
+
+## ![项目视频demo](https://www.bilibili.com/video/BV12A4y1R7mU/)
+## ![PDF中文版](https://docs.qq.com/document/DTkZvTlhZUEFPRkpM)
+## ![PDF英文版](https://docs.qq.com/document/DTmJRdlBpcmxJQXVD)
+
 ## 项目简介
 
 基于ipfs协议的——>新一代短视频APP（元宇宙·无障碍版）
