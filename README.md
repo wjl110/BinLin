@@ -8,7 +8,7 @@
 《效率工具产品-短视频APP（元宇宙·无障碍版）》
 
 ## 成员介绍
-![imag](https://hackerlink.s3.amazonaws.com/static/files/WechatIMG286.png)
+[imag](https://hackerlink.s3.amazonaws.com/static/files/WechatIMG286.png)
 
 团       队:  BinLin技术团队
 人       员:  项目发起负责人 wjl110
@@ -17,20 +17,6 @@
 团队分工：前端、后端、开发、UI......
 
 ---本文遵循知识共享许可协议（Creative Commons license）CC4.0---
-
- 
-
->beta(3.0)：2022-04-22 
-此版本优化了项目简介，丰富了“方案介绍，产品需求，用户痛点，设计运营模式”以及技术更新~
-起草了“流程图”初步方案
-对“呈现形式”进行了进一步的修改
-对可使用ipfs技术和框架进行了整合
-
->beta(2.0)：2022-04-20 
-此版本确定了项目研究方向和研究课题~
-
->beta(1.0)：2022-04-16 
-此版本为第一代-初代项目建设草稿方案~
 
 
 ---
