@@ -26,6 +26,7 @@ PC : [ShiLei](https://github.com/916202420)
 
 Applets: [LiuHao](https://github.com/lhlh123456)
 
+*The team members are all students from colleges and universities in mainland China*
 ---
 
 # Project Featured 
