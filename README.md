@@ -8,11 +8,12 @@
 《效率工具产品-短视频APP（元宇宙·无障碍版）》
 
 ## 成员介绍
+https://hackerlink.s3.amazonaws.com/static/files/WechatIMG286.png
 
-个人选手：王健霖
-
-队       名:   你说的都队
-
+团       队:  BinLin技术团队
+人       员:  项目发起负责人 wjl110
+             PC端 石磊
+             小程序端 刘昊
 团队分工：前端、后端、开发、UI......
 
 ---本文遵循知识共享许可协议（Creative Commons license）CC4.0---
