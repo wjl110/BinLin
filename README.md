@@ -7,7 +7,7 @@
 
 ---
 
-## [Video introduction](https://www.bilibili.com/video/BV12A4y1R7mU/)、[PPT(English version)](https://docs.qq.com/document/DTmJRdlBpcmxJQXVD)、[PPT(Chinese Version)](https://docs.qq.com/document/DTkZvTlhZUEFPRkpM)、[Technical Description](README_file.md)
+## [Video introduction](https://www.bilibili.com/video/BV12A4y1R7mU/)、[PPT(English version)](https://docs.qq.com/document/DTmJRdlBpcmxJQXVD)、[PPT(Chinese Version)](https://docs.qq.com/document/DTkZ6enV3b3pIcFdk)、[Technical Description](README_file.md)
 
 ---
 # Demo Code library
