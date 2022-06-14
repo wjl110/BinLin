@@ -2,7 +2,13 @@
 [Chinese](README_chinese.md)、
 [English](README.md)
 ---
+<<<<<<< HEAD
 ![image](English.png)
+=======
+
+![image](https://hackerlink.s3.amazonaws.com/static/files/WechatIMG286.png)
+![Uploading WechatIMG402.png…]()
+>>>>>>> 87996bfe559a4cd4f2a4ac97a2243f33c987eb20
 
 ---
 
