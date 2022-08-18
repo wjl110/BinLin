@@ -8,4 +8,17 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>scetc-bin-lin-mini-api</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>com.scetc.show</groupId>
+            <artifactId>scetc-bin-lin-dev-pojo</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.scetc.show</groupId>
+            <artifactId>scetc-bin-lin-dev-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 </project>

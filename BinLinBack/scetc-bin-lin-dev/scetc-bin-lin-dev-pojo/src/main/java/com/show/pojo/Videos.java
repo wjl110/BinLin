@@ -1,5 +1,7 @@
 package com.show.pojo;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.util.Date;
 import javax.persistence.*;
 
